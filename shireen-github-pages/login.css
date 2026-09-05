@@ -1,0 +1,18 @@
+.locked { overflow: hidden; }
+.locked .story { display: none; }
+.login-shell { position: relative; display: grid; min-height: 100svh; place-items: center; overflow: hidden; padding: 24px; isolation: isolate; }
+.login-photo, .login-overlay { position: absolute; inset: 0; }
+.login-photo { z-index: -3; background: url('./shireen-night.png') center 36% / cover no-repeat; transform: scale(1.03); }
+.login-overlay { z-index: -2; background: linear-gradient(105deg, rgb(7 18 40 / 88%), rgb(7 18 40 / 50%)), linear-gradient(to top, rgb(7 18 40 / 70%), transparent 55%); backdrop-filter: blur(3px); }
+.login-card { width: min(100%, 440px); padding: clamp(30px, 5vw, 48px); color: white; border: 1px solid rgb(255 255 255 / 24%); border-radius: 28px; background: rgb(7 18 40 / 66%); box-shadow: 0 28px 90px rgb(0 0 0 / 35%); backdrop-filter: blur(24px); }
+.lock-badge { display: grid; width: 46px; height: 46px; margin-bottom: 26px; color: #17243d; background: #fff9e9; border-radius: 50%; place-items: center; font-size: 1.4rem; }
+.login-card h1 { margin: 0; font-size: clamp(2rem, 7vw, 3rem); line-height: 1.22; }
+.login-copy { margin: 18px 0 28px; color: rgb(255 255 255 / 74%); line-height: 1.85; }
+.login-form { display: grid; gap: 10px; }
+.login-form label { font-size: .82rem; font-weight: 700; }
+.login-form input { width: 100%; min-height: 52px; padding: 0 16px; color: white; border: 1px solid rgb(255 255 255 / 25%); border-radius: 14px; outline: none; background: rgb(255 255 255 / 10%); }
+.login-form input::placeholder { color: rgb(255 255 255 / 47%); }
+.login-form input:focus { border-color: #f4d47f; box-shadow: 0 0 0 4px rgb(244 212 127 / 15%); }
+.login-form button { min-height: 52px; margin-top: 4px; color: #17243d; border: 0; border-radius: 14px; background: #fff4c7; font-weight: 800; cursor: pointer; }
+.form-error { margin: 0; color: #ffd0d0; font-size: .82rem; }
+.login-shell[hidden] { display: none !important; }
